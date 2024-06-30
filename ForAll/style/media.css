@@ -1,0 +1,65 @@
+@media (max-width:480px){
+	.search{
+		display: none;
+	}
+	.nav{
+		height: 140px;
+	}
+	.row_nav{
+			height: 200px;
+	}
+	.row_nav>ul>li{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+
+	}	
+}
+@media (max-width:767px){
+	.banner{
+		display: none;
+ 		height: 500px;
+	}
+}
+@media (max-width:767px){
+	nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.containers{
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.containers li {
+    margin-bottom: 10px;
+}
+
+.containers a {
+    color: #fff;
+    text-decoration: none;
+}
+input[type="checkbox"] {
+    display: none;
+
+
+
+
+}
+
+input[type="checkbox"]:checked ~ .containers {
+    display: block;
+}
+.burger-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+}

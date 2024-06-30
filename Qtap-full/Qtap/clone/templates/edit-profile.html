@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        /* Add your custom styles here */
+        .container {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group input[type="file"] {
+            padding: 3px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #218838;
+        }
+        .gallery {
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .toggle-display {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .toggle-display input {
+            margin-left: 10px;
+        }
+        .link-buttons, .gallery-buttons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+    <script>
+        let linkCounter = 1;
+        let removeCounter = 0;
+
+        function addLinkField() {
+            if (linkCounter < 6) {
+                linkCounter++;
+                const linkContainer = document.getElementById('link-container');
+                const newField = document.createElement('div');
+                newField.className = 'form-group';
+                newField.innerHTML = `
+                    <div class="toggle-display">
+                        <label for="id_personal_links${linkCounter}">Personal Link</label>
+                        <input type="checkbox" id="id_personal_links${linkCounter}_toggle" name="personal_links${linkCounter}_toggle">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="personal_links${linkCounter}" id="id_personal_links${linkCounter}" placeholder="personal link">
+                    </div>
+                `;
+                linkContainer.appendChild(newField);
+            } else {
+                alert('You can only add up to 6 links.');
+            }
+        }
+
+        function removeLinkField() {
+            const linkContainer = document.getElementById('link-container');
+            if (linkCounter > 1 && removeCounter < 4) {
+                linkContainer.removeChild(linkContainer.lastChild);
+                linkCounter--;
+                removeCounter++;
+            } else if (removeCounter >= 4) {
+                alert('You can only remove up to 4 links.');
+            }
+        }
+
+        function addGalleryField() {
+            const galleryContainer = document.getElementById('gallery-container');
+            const newField = document.createElement('div');
+            newField.className = 'form-group';
+            newField.innerHTML = `
+                <div class="form-group">
+                    <label for="image">Картинка</label>
+                    <input type="file" name="image" class="image-field">
+                </div>
+                <div class="form-group">
+                    <label for="image_name">Название картинки</label>
+                    <input type="url" name="image_name" class="image-name-field" placeholder="URL картинки">
+                </div>
+            `;
+            galleryContainer.appendChild(newField);
+        }
+
+        function removeGalleryField() {
+            const galleryContainer = document.getElementById('gallery-container');
+            if (galleryContainer.children.length > 1) {
+                galleryContainer.removeChild(galleryContainer.lastChild);
+            }
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Задний фон</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.background_image.label_tag }} {{ form.background_image }}
+        {{ form.profile_image.label_tag }} {{ form.profile_image }}
+        {{ form.page_title.label_tag }} {{ form.page_title }}
+        {{ form.description.label_tag }} {{ form.description }}
+
+        <!-- Personal Links Section -->
+        <div id="link-container">
+            <div class="form-group">
+                <div class="toggle-display">
+                    <label for="id_personal_links">Personal Link</label>
+                    <input type="checkbox" id="id_personal_links_toggle" name="personal_links_toggle">
+                </div>
+                <div class="form-group">
+                    {{ form.personal_links }}
+                </div>
+            </div>
+        </div>
+        <div class="link-buttons">
+            <button type="button" class="btn" onclick="addLinkField()">+</button>
+            <button type="button" class="btn" onclick="removeLinkField()">-</button>
+        </div>
+        
+        {{ form.whatsapp_toggle.label_tag }} {{ form.whatsapp_toggle }}
+        {{ form.whatsapp.label_tag }} {{ form.whatsapp }}
+
+        {{ form.youtube_link.label_tag }} {{ form.youtube_link }}
+        <div>
+            {{ form.deactivate_tile }} {{ form.deactivate_tile.label_tag }}
+        </div>
+
+        <!-- Gallery Section -->
+        <div class="container gallery">
+            <h2>Галерея</h2>
+            <div id="gallery-container">
+                <div class="form-group">
+                    <label for="image">Картинка</label>
+                    <input type="file" name="image" class="image-field">
+                </div>
+                <div class="form-group">
+                    <label for="image_name">Название картинки</label>
+                    <input type="url" name="image_name" class="image-name-field" placeholder="URL картинки">
+                </div>
+            </div>
+            <div class="gallery-buttons">
+                <button type="button" class="btn" onclick="addGalleryField()">+</button>
+                <button type="button" class="btn" onclick="removeGalleryField()">-</button>
+            </div>
+        </div>
+
+        <!-- Save Button -->
+        <button type="submit" class="btn">Сохранить</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/broadway" rel="stylesheet">
+
+    <title>Happy time</title><style type="text/css">
+        @import url('https://fonts.cdnfonts.com/css/broadway');
+        header{
+            background-color: gold;
+            height: 80px;
+        }
+        *{
+            margin: 0;
+             box-sizing: border-box;
+
+            padding: 0;
+        }
+        .backd{
+            float: left;
+            padding: 13px;
+            font-family: 'Broadway', sans-serif;
+
+        }
+        .luckd{
+            float: left;
+            padding: 44px;
+            font-family: 'Broadway', sans-serif;
+
+        }
+        li,ul,a{
+            display: flex;
+            padding: 10px;
+            text-decoration: none;
+            color:black;
+        }
+        a:hover{
+          background-color: white;
+          border-radius: 50px;
+        }
+        .nj{
+            width: 22px;
+            height: 22px;
+        }
+        .j{
+            width: 16px;
+            height: 16px;
+        }
+        .ns:hover{
+         background-color: #04aa6d;
+         border-radius: 50px;
+         color: white;
+         animation-timing-function:12sc;        }
+         input{
+            width: auto;
+            height: 30px;
+          border-radius: 49px  0  0 49px  ;
+          border: none;
+         }
+          button{
+            width: 60px;
+            height: 30px;
+          border-radius:0 49px  49px 0 ;
+          border: none;
+         }
+         .dd{
+            padding: 15px;
+         }
+         .f{
+            width:13px;
+            height: auto;
+         }
+         button:hover{
+            background-color:#04aa6d ;
+         }
+         .f:hover{
+            color: white;
+         }
+      footer {
+  background-color: gold;
+  padding: 20vh 0;
+}
+         footer, h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+  padding: 0 15px;
+}
+ .foto {
+    display: flex;
+ }
+ .aa{
+/*    border-radius: 50px;*/
+width: 6S00px;}
+ .to{
+    display: inline;
+ }
+ .animatsiyali-rasm {
+  animation: zoom-in 1s ease-in-out;
+display: flex;
+position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.mini-carousel {
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  flex: 0 0 33.33%;
+  transition: transform 0.5s ease-in-out;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 89%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: #04aa6d;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.carousel-item:hover {
+  transform: scale(1.11);
+/*  background-color: gold;*/
+}
+
+.carousel-item{
+    padding: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 2000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.email-quti {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.email-quti h2 {
+  margin-bottom: 10px;
+}
+
+.email-quti form {
+  display: flex;
+  flex-direction: column;
+}
+input:hover{
+    background-color: #04aa6d;
+}
+.email-quti label {
+  margin-bottom: 5px;
+}
+
+.email-quti input,
+.email-quti textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.email-quti button {
+  padding: 10px 20px;
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.email-quti button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+.animatsiyali-rasm .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/*MEdia qismi ---------------------------------------------------------------*/
+@media (max-width:480px)
+{
+
+ li,a,.dd {
+    display: none;
+ }
+ .containerd,.row{
+    display: inline;
+    align-items:center ;
+ }
+ .email-quti{
+    align-items: center;
+ }
+ .fa,.fb,.fc{
+    display: none;
+ }
+
+.da{
+    margin:76px;
+}
+.sad{
+    width: 500px;
+    height: 45px;
+
+}
+}
+@media (min-width:1000px)
+{
+    .content,.sad{
+        display: none;
+    }
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 300px;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .card {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+  }
+.card-container{
+    padding: 15px;
+}
+}
+
+@media screen and (max-width: 767px) {
+  .card {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+/*    display: inline;*/
+  }
+  .card-container,.ba{
+    display: inline;
+    align-items: center;
+    width: 30%;
+  }
+  .carousel-item {
+    padding: 0px;
+}
+ 
+}
+.ba{
+    width: 250px;
+}
+
+/*_______________________________________Loder______________________________________*/
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 120px;
+  height: 120px;
+  margin: -76px 0 0 -76px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+/*_________________ORDER____TARIFLAR____________________UChun________*/
+.Tariflar{
+
+}
+#but{border-radius:50px;background-color:#b6ada6; width:85px;height: 45px;}
+#but:hover{color:white;width: 100px;height: 60px;animation-timeline: 1s;background-color: #04aa6d}
+
+#bag:hover{background: white;}
+
+    </style>
+
+
+</head>
+<body  onload="myFunction()" style="margin:0;">
+<header style="display:none;" id="myDiv" class="animate-bottom"><div class="back"><h1 class="backd">Happy Time</h1></div>
+<div class="hub">
+   <nav class="menu"> <ul>
+       <li><a href="#">Biz Haqimizda</a></li>
+       <li > <a href="#">Bayram va Tadbirlar</a></li>
+       <li > <a href="#">Buyurtma Berish</a></li>
+       <div class="dd"><input type="text" name="name" placeholder="      Type here.."><button><img class="f"src="d.svg"></button></div>
+        <li > <a href="#" class="ns">Login<img class="nj" src="nnn.png"></a><a href="#" class="ns">Sign'up<img class="j" src="svg.svg"></a></li>
+        <img  class= "sad"src="burger.svg">
+</div>
+
+</header>
+
+<div  class="animate-bottom">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="fff.png" style="width:100%">
+  <div class="text">Keyingi Text Uchun</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="marry.jpg" style="width:100%">
+  <div class="text">Keyingi Text Uchun<</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="psb.webp" style="width:100%">
+  <div class="text">Keyingi Text Uchun<</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+
+<br>
+<center>
+<section class="mini-carousel">
+  <div class="carousel-item"><div class="card">
+  <img src="gpg.jfif" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Bizning qilgan ishlarimiz</b></h4> 
+    <p>Buyurtma Berish uchun</p> 
+  </div>
+</div>
+  </div>
+  <div class="carousel-item">
+   <div class="card">
+  <img src="gpg.jfif" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Bizning qilgan ishlarimiz</b></h4> 
+    <p>Buyurtma Berish uchun</p> 
+  </div>
+</div>  </div>
+  <div class="carousel-item">
+    <div class="card">
+  <img src="gpg.jfif" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Bizning qilgan ishlarimiz</b></h4> 
+    <p>Buyurtma Berish uchun</p>  
+  </div>
+</div>
+  </div>
+</section></center>
+<br>
+<div class="card-container">
+
+   <div class="card">
+    <img src="gpg.jfif" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div> 
+  <div class="card">
+    <img src="fff.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="marry.jpg" class="ba" alt="Rasm">
+   <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="sss.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card">
+    <img src="fff.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="fff.jfif" class="ba" alt="Rasm">
+   <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="sss.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="jpg.jfif" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+</div>
+<div class="card-container">
+  <div class="card">
+    <img src="psb.webp" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="marry.jpg" class="ba" alt="Rasm">
+   <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="sss.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+  <div class="card">
+    <img src="fff.png" class="ba" alt="Rasm">
+    <h3>Bayramlar va Tadbirlar uchun</h3>
+    <p>Buyurtma Berish</p>
+    <a href="#">Batafsil</a>
+  </div>
+</div>
+
+<br>
+<section class="Tariflar">
+    <h1 style="text-align:center;  font-family: 'Broadway', sans-serif;">Tariflar</h1>
+    <div class="card" id="bag"><h1>Bronza</h1><p>Xona bezaklari - sharlar, bannerlar<br>
+Stol bezaklari – markazdagi gullar, sovg'alar<br>
+DJ hizmati<br>
+Sovuq taomlar</p><br><h2>650$</h2><button id="but">order</button></div> 
+
+    <div class="card" id="bag"><h1>Kumush</h1><p>
+• Bronza paketidagi barchasi va:<br>
+• Taklifnomani loyihalash<br>
+• Jonli ijro guruhi<br>
+• Sovuq taomlar va turli sharbatlar</p><br><h2>1300$</h2><br><button id="but">order</button></div>
+    <div class="card" id="bag"><h1>Oltin</h1>
+        <p>Kumush paketidagi barchasi va:<br>
+• To'liq mukammallikni ta'minlash uchun ishtirok etadigan xodimlar<br>
+• Mehmonlar uchun turar joy topish, transportni bron qilish<br>
+• Jonli ijro guruhi va fokuschi<br>
+• Issiq va sovuq taomlar. Turli sharbatlar</p><br><h2>2650$</h2><br><button id="but">order</button></div>
+</section>
+<br>
+<section class="email-quti">
+  <h2>Email Quti</h2>
+  <form>
+    <label for="name">Ism:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="message">Xabar:</label>
+    <textarea id="message" name="message" required></textarea>
+    <button type="submit">                   send</button>
+  </form>
+</section>
+</div>
+<div id="loader"></div>
+
+
+
+<footer  class="animate-bottom"><div class="backs"><h1 class="luckd">Happy Time</h1></div>
+
+  <div class="containerd">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Biz bilan bog'laning</h3>
+        <p>Telefon: +998 99 123 45 67</p>
+        <p>Email: info@example.com</p>
+      </div>
+      <div class="col-md-6">
+        <h3>Avtorlik huquqi</h3>
+        <p>&copy; 2022 Sayt nomi. Barcha huquqlar himoyalangan.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- </footer> -->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+
+
+
+</html>

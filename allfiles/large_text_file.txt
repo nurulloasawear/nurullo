@@ -1,0 +1,168 @@
+
+Python Obyektga Yo'naltirilgan Dasturlash (OOP) Mavzulari
+
+1. Kirish va Asoslar
+   - Obyektga yo'naltirilgan dasturlash nima?
+   - Klasslar va obyektlar
+   - __init__ metodi
+   ```python
+   class Car:
+       def __init__(self, make, model):
+           self.make = make
+           self.model = model
+
+   my_car = Car("Toyota", "Corolla")
+   print(my_car.make)
+   print(my_car.model)
+   ```
+
+2. Klass Atributlari va Metodlari
+   - Atributlar yaratish va ularga murojaat qilish
+   - Metodlar yaratish
+   ```python
+   class Car:
+       def __init__(self, make, model):
+           self.make = make
+           self.model = model
+
+       def get_info(self):
+           return f"{self.make} {self.model}"
+
+   my_car = Car("Toyota", "Corolla")
+   print(my_car.get_info())
+   ```
+
+3. Inkapsulyatsiya
+   - Xususiy (private) atributlar
+   - Himoyalangan (protected) atributlar
+   ```python
+   class Car:
+       def __init__(self, make, model):
+           self.__make = make  # Xususiy atribut
+           self._model = model  # Himoyalangan atribut
+
+       def get_make(self):
+           return self.__make
+
+   my_car = Car("Toyota", "Corolla")
+   print(my_car.get_make())
+   ```
+
+4. Meros olish (Inheritance)
+   - Bitta klassdan meros olish
+   - Super funksiyasi
+   ```python
+   class Parent:
+       def __init__(self, name):
+           self.name = name
+
+       def get_name(self):
+           return self.name
+
+   class Child(Parent):
+       def __init__(self, name, age):
+           super().__init__(name)
+           self.age = age
+
+       def get_age(self):
+           return self.age
+
+   child = Child("Ali", 20)
+   print(child.get_name())
+   print(child.get_age())
+   ```
+
+5. Polimorfizm
+   - Bir xil metod nomi turli klasslarda
+   ```python
+   class Dog:
+       def speak(self):
+           return "Woof!"
+
+   class Cat:
+       def speak(self):
+           return "Meow!"
+
+   animals = [Dog(), Cat()]
+
+   for animal in animals:
+       print(animal.speak())
+   ```
+
+6. Abstraktsiya
+   - Abstrakt klasslar va metodlar
+   ```python
+   from abc import ABC, abstractmethod
+
+   class Animal(ABC):
+       @abstractmethod
+       def speak(self):
+           pass
+
+   class Dog(Animal):
+       def speak(self):
+           return "Woof!"
+
+   class Cat(Animal):
+       def speak(self):
+           return "Meow!"
+
+   dog = Dog()
+   cat = Cat()
+   print(dog.speak())
+   print(cat.speak())
+   ```
+
+7. Klass Metodlari va Statik Metodlar
+   - Klass metodlari
+   - Statik metodlar
+   ```python
+   class MyClass:
+       @classmethod
+       def class_method(cls):
+           return "Bu klass metodidir"
+
+       @staticmethod
+       def static_method():
+           return "Bu statik metodidir"
+
+   print(MyClass.class_method())
+   print(MyClass.static_method())
+   ```
+
+8. Muvaffaqiyatli Loyihalash Printsip va Yaxshi Amaliyotlar
+   - DRY (Don't Repeat Yourself)
+   - KISS (Keep It Simple, Stupid)
+   - YAGNI (You Aren't Gonna Need It)
+
+9. Loyihalarda OOP ning Qo'llanilishi
+   - Obyektlararo munosabatlar
+   - Loyihani tashkil etish
+
+10. OOP dan Foydalangan Holda Loyihani Misol
+   - OOP ning barcha tamoyillarini qo'llagan holda kichik loyiha yaratish
+
+Yakuniy Misol:
+```python
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def get_details(self):
+        return f"Name: {self.name}, Salary: {self.salary}"
+
+class Manager(Employee):
+    def __init__(self, name, salary, department):
+        super().__init__(name, salary)
+        self.department = department
+
+    def get_details(self):
+        return f"Name: {self.name}, Salary: {self.salary}, Department: {self.department}"
+
+emp = Employee("Ali", 50000)
+mgr = Manager("Vali", 70000, "HR")
+
+print(emp.get_details())
+print(mgr.get_details())
+```

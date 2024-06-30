@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock %}
+{% block content %}
+<center><div class="div"><h1>
+    Собери всё самое<br> важное в одном <br>месте
+    </h1>
+<p>Мультиплатформа<br> персонализированных страниц</p></div></center><br><br><br><br>
+<link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+
+<div class="register-wrapper">
+    <div class="content-box">
+        <h1>Собери всё самое важное в одном месте</h1>
+        <p>Мультиплатформа персонализированных страниц</p>
+        <form method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+           
+            <button type="submit" >Зарегистрироваться</button></form>
+            <p>Регистрируясь, Вы принимаете наши Договор оферты, Условия, Политику конфиденциальности и Политику в отношении файлов cookie.</p>
+           
+            <div class="alternative">
+                Уже есть аккаунт?<br> <br><a href="{% url 'login' %}" class="asa">Войти</a>
+            </div>
+            <div class="support-link">
+                <a href="#" style="color: white;" class="button-link">Блог</a> | <a href="#" style="color: white;" class="button-link">Техподдержка</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

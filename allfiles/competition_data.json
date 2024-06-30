@@ -1,0 +1,19 @@
+{
+  "participants": [
+    {
+      "name": "John",
+      "score": 90,
+      "participated": true
+    },
+    {
+      "name": "Jane",
+      "score": 85,
+      "participated": true
+    },
+    {
+      "name": "Bob",
+      "score": 95,
+      "participated": false
+    }
+  ]
+}

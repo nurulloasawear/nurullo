@@ -1,0 +1,38 @@
+{
+  "nurullo": {
+    "name": "nurullo",
+    "received_test": false,
+    "participated": true,
+    "rating": null
+  },
+  "Nurullo": {
+    "name": "Nurullo",
+    "received_test": true,
+    "participated": true,
+    "rating": null
+  },
+  "hayrulla": {
+    "name": "hayrulla",
+    "received_test": false,
+    "participated": false,
+    "rating": null
+  },
+  "tohiraka": {
+    "name": "tohiraka",
+    "received_test": false,
+    "participated": false,
+    "rating": null
+  },
+  "nurullo3": {
+    "name": "nurullo3",
+    "received_test": true,
+    "participated": true,
+    "rating": null
+  },
+  "nurulloasa": {
+    "name": "nurulloasa",
+    "received_test": true,
+    "participated": false,
+    "rating": null
+  }
+}

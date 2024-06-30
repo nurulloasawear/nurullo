@@ -1,0 +1,256 @@
+Sotildi:cola 0.5,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:9000
+Sotildi:1,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:pepsi 0.5,	Narxi:7000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:700000
+Sotildi:1000,	Narxi:10000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:1000000
+Sotildi:fanta 0.5,,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:fanta 0.5,	Narxi:8000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:800000
+Sotildi:fanta,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:cola,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:cola,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:cola,	Narxi:120000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:1200000
+Sotildi:fanta,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi:cola 0.5,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:900000
+Sotildi: nestle sut 2%,	Narxi:14000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:168000
+Sotildi: nestle sut 2%,	Narxi:14000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:168000
+Sotildi: nestle sut 2%,	Narxi:14000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:168000
+Sotildi: nestle sut 2%,	Narxi:14000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:168000
+Sotildi:9789943262454,	Narxi:9000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:9000000
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:90000,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 50-blog,
+Mahulot qabul qilingan narxi:7000,
+Mahsulot donasi yoki kilosini narxi:90000,
+Mahsulot sotilish narxi:1,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:9000
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:1,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 50-blog,
+Mahulot qabul qilingan narxi:9000,
+Mahsulot donasi yoki kilosini narxi:1,
+Mahsulot sotilish narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Nomi: 4345633636363,
+Mahsulot kelgan Sanasi:35335,
+Yarog'lilik muddati: 43535,
+Mahsulot donasi-blogi: 43535,
+Mahulot qabul qilingan narxi:353,
+Mahsulot donasi yoki kilosini narxi:35335,
+Mahsulot sotilish narxi:5353553,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:53535
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:97899,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:1,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 50-blog,
+Mahulot qabul qilingan narxi:9000,
+Mahsulot donasi yoki kilosini narxi:1,
+Mahsulot sotilish narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Sotildi:,	Narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Nomi: 456789,
+Mahsulot kelgan Sanasi:435678,
+Yarog'lilik muddati: 4567890-,
+Mahsulot donasi-blogi: 45678,
+Mahulot qabul qilingan narxi:4567890,
+Mahsulot donasi yoki kilosini narxi:435678,
+Mahsulot sotilish narxi:5678989,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:324356789
+Sotildi:,	Narxi:5678989,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:324356789
+Nomi: 23456789,
+Mahsulot kelgan Sanasi:78,
+Yarog'lilik muddati: 5678977654322,
+Mahsulot donasi-blogi: 4567879765342,
+Mahulot qabul qilingan narxi:457897756432,
+Mahsulot donasi yoki kilosini narxi:78,
+Mahsulot sotilish narxi:345678,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:567898867565443
+Sotildi:,	Narxi:5678989,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:324356789
+Sotildi:,	Narxi:5678989,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:324356789
+Nomi: 7564533,
+Mahsulot kelgan Sanasi:56,
+Yarog'lilik muddati: 5675643,
+Mahsulot donasi-blogi: 2456754356754,
+Mahulot qabul qilingan narxi:75643,
+Mahsulot donasi yoki kilosini narxi:56,
+Mahsulot sotilish narxi:9876543,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:5453
+Sotildi:,	Narxi:5678989,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:324356789
+Nomi: 2456754356754,
+Mahsulot kelgan Sanasi:2456754356754,
+Yarog'lilik muddati: 2456754356754,
+Mahsulot donasi-blogi: 2456754356754,
+Mahulot qabul qilingan narxi:2456754356754,
+Mahsulot donasi yoki kilosini narxi:2456754356754,
+Mahsulot sotilish narxi:2456754356754,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:2456754356754
+Sotildi:,	Narxi:2456754356754,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:2456754356754
+Sotildi:,	Narxi:2456754356754,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:2456754356754
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:90000,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 50-blog,
+Mahulot qabul qilingan narxi:7000,
+Mahsulot donasi yoki kilosini narxi:90000,
+Mahsulot sotilish narxi:90000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:800000
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:800000,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 7000,
+Mahulot qabul qilingan narxi:800000,
+Mahsulot donasi yoki kilosini narxi:800000,
+Mahsulot sotilish narxi:900000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:90000
+Nomi: 9789943262454,
+Mahsulot kelgan Sanasi:900000,
+Yarog'lilik muddati: 2025,
+Mahsulot donasi-blogi: 7000,
+Mahulot qabul qilingan narxi:90000,
+Mahsulot donasi yoki kilosini narxi:900000,
+Mahsulot sotilish narxi:9000000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:800000
+Sotildi:,	Narxi:24252366,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:2456432
+Sotildi:,	Narxi:24252366,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:2456432
+Sotildi:,	Narxi:2322442,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:414243
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:980000,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:56000
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221
+Sotildi:,	Narxi:212112,
+Kegan Mahsulotni umumiy % qoyilgandgi  umum narxi:211221

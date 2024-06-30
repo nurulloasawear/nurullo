@@ -1,0 +1,39 @@
+<!-- templates/login.html -->
+
+
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock %}
+{% block content %}
+<center><div class="div"><h1>
+    Собери всё самое<br> важное в одном <br>месте
+    </h1>
+<p>Мультиплатформа<br> персонализированных страниц</p></div></center><br><br><br><br>
+<link rel="stylesheet" href="{% static 'css/register_style.css' %}">
+
+<div class="register-wrapper">
+    <div class="content-box">
+        <h1>Собери всё самое важное в одном месте</h1>
+        <p>Мультиплатформа персонализированных страниц</p>
+            <form method="post" action="{% url 'login' %}" style="display: inline-table;">
+                {% csrf_token %}
+                <input type="text"class= ".sss" name="nurullo" placeholder="Nickname" required><br><br>
+
+                <input type="password"class= ".sss"  name="password" placeholder="Password" required> <br><br>
+                <button> Login</button>
+                {% if error %}
+                    <div>{{ error }}</div>
+                {% endif %}
+            </form><br><br>
+            <div class="alternative">
+                Надо напомнить пароль?<br> <br><a href="{% url 'register' %}" class="asa">register</a>
+            </div>
+            <div class="support-link">
+                <a href="#" style="color: white;" class="button-link">Блог</a> | <a href="#" style="color: white;" class="button-link">Техподдержка</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

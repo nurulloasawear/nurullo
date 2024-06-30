@@ -1,0 +1,125 @@
+body {
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image:url('bg_desk.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+h1,p{
+    background-attachment: fixed;
+}
+.register-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ul{
+    display: none;
+}
+.sss{
+    padding: 10px;
+}
+.content-box {
+    height: auto;
+    background: white;
+    padding: 20px 40px;
+    border-radius: 19px;
+    width: 360px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    text-align: center;
+    color: black;
+}
+
+.content-box h1 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.content-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+.alternative, .support-link {
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.alternative a, .support-link a {
+    color: black;
+    text-decoration: none;
+}
+.asa{
+    color: black;
+}
+.alternative a:hover, .support-link a:hover {
+    text-decoration: underline;
+}
+
+.support-link {
+    margin-top: 20px;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.asa {
+    background-color: white; /* Dark background for the button */
+    /* color: white; White text color */
+    padding: 8px 15px; /* Padding around the text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin: 0 5px; /* Space between buttons */
+    display: inline-block; /* Necessary for spacing and alignment */
+    border: 1px solid black;
+    width:270px ;
+}
+.button-link {
+    background-color: #333; /* Dark background for the button */
+    color: white; /* White text color */
+    padding: 8px 15px; /* Padding around the text */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin: 0 5px; /* Space between buttons */
+    display: inline-block; /* Necessary for spacing and alignment */
+}
+
+.button-link:hover {
+    background-color: #555; /* Lighter background on hover */
+}
